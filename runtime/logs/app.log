@@ -1,0 +1,117 @@
+2018-05-13 19:00:53 [192.168.68.1][-][-][info][yii\web\Session::open] Session started
+2018-05-13 19:00:53 [192.168.68.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /mnt/hgfs/webmobile/www/messages/ru-RU/app.php Fallback file does not exist as well: /mnt/hgfs/webmobile/www/messages/ru/app.php
+    in /mnt/hgfs/webmobile/www/modules/api/controllers/DefaultController.php:31
+2018-05-13 19:00:53 [192.168.68.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb86ofcoh9frtbddqh7p6fk094'
+    '_csrf' => 'daa99d84d7772caa6a1c18de867e98ad548f3f7f4052de6e7b2e3406576254f0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vJKjF6XnEQ9C9eDi7zhrZiUx5xBrBGhb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'webmobile.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=eb86ofcoh9frtbddqh7p6fk094; _csrf=daa99d84d7772caa6a1c18de867e98ad548f3f7f4052de6e7b2e3406576254f0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vJKjF6XnEQ9C9eDi7zhrZiUx5xBrBGhb%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at webmobile.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'webmobile.local'
+    'SERVER_ADDR' => '192.168.68.4'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.68.1'
+    'DOCUMENT_ROOT' => '/mnt/hgfs/webmobile/www/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/mnt/hgfs/webmobile/www/web'
+    'SERVER_ADMIN' => 'TwilightTower@mail.ru'
+    'SCRIPT_FILENAME' => '/mnt/hgfs/webmobile/www/web/index.php'
+    'REMOTE_PORT' => '58454'
+    'REDIRECT_URL' => '/api'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1526238052.754
+    'REQUEST_TIME' => 1526238052
+]
+2018-05-13 19:06:20 [192.168.68.1][-][eb86ofcoh9frtbddqh7p6fk094][info][yii\web\Session::open] Session started
+2018-05-13 19:06:20 [192.168.68.1][-][eb86ofcoh9frtbddqh7p6fk094][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /mnt/hgfs/webmobile/www/views/site/index.php in /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/mnt/hgfs/webmo...', Array, Object(app\controllers\SiteController))
+#1 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#2 /mnt/hgfs/webmobile/www/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /mnt/hgfs/webmobile/www/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /mnt/hgfs/webmobile/www/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-05-13 19:06:20 [192.168.68.1][-][eb86ofcoh9frtbddqh7p6fk094][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb86ofcoh9frtbddqh7p6fk094'
+    '_csrf' => 'daa99d84d7772caa6a1c18de867e98ad548f3f7f4052de6e7b2e3406576254f0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vJKjF6XnEQ9C9eDi7zhrZiUx5xBrBGhb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'webmobile.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=eb86ofcoh9frtbddqh7p6fk094; _csrf=daa99d84d7772caa6a1c18de867e98ad548f3f7f4052de6e7b2e3406576254f0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vJKjF6XnEQ9C9eDi7zhrZiUx5xBrBGhb%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at webmobile.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'webmobile.local'
+    'SERVER_ADDR' => '192.168.68.4'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.68.1'
+    'DOCUMENT_ROOT' => '/mnt/hgfs/webmobile/www/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/mnt/hgfs/webmobile/www/web'
+    'SERVER_ADMIN' => 'TwilightTower@mail.ru'
+    'SCRIPT_FILENAME' => '/mnt/hgfs/webmobile/www/web/index.php'
+    'REMOTE_PORT' => '58518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1526238380.06
+    'REQUEST_TIME' => 1526238380
+]

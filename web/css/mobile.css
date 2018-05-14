@@ -1,0 +1,567 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #252d48;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+.mobile-body,
+.mobile-body-content {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-body-content {
+    padding-top: 23px;
+}
+
+.centered-abs {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.mobile-screen-loading {
+    /*margin: 0 auto;*/
+    display: block;
+    /*position: relative;*/
+    top: 160px;
+}
+
+.panel {
+    color: black;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.mob-top-menu-nb,
+.mob-top-menu-common {
+    width: 296px;
+}
+
+.mob-top-menu-nb {
+    /*margin: 23px auto 0;*/
+    margin: 20px auto 0;
+}
+
+.mob-top-menu-common {
+    margin: 0 auto;
+    font-size: 12px;
+    z-index: 1;
+    position: relative;
+}
+
+.mob-top-menu-common a {
+    color: #dee2ee;
+}
+
+.mob-top-menu-common a:hover {
+    text-decoration: none;
+}
+
+.mob-top-menu-common .selected {
+    color: #fff;
+    font-weight: 500;
+    border-bottom: solid 2px #f8db74;
+    padding-bottom: 2px;
+}
+
+.mob-top-menu-nb .left-elem,
+.mob-top-menu-common .left-elem {
+    width: 21px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.mob-top-menu-nb .middle-elem,
+.mob-top-menu-common .middle-elem {
+    width: 100%;
+    text-align: center;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-weight: 600;
+    color: #8b98bb;
+    vertical-align: middle;
+}
+
+.mob-top-menu-nb .right-elem,
+.mob-top-menu-common .right-elem {
+    width: 21px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.loading-caption {
+    font-weight: 600;
+    top: 354px;
+    color: #c9ccdf;
+}
+
+.tap-to-pay-caption {
+    font-weight: 600;
+    top: 330px;
+    color: #8b98bb;
+}
+
+.wait-caption-bottom {
+    width: 157px;
+    top: 562px;
+    color: #9eaacc;
+    font-size: 11px;
+    text-align: center;
+}
+
+.wait-caption-bottom.success {
+    top: 602px;
+}
+
+.mob-top-menu-menu {
+    /*width: 133px;*/
+    /*margin: 0 auto;*/
+    color: #dee2ee;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 92px;
+}
+
+.mob-top-menu-menu td {
+    text-align: left;
+    vertical-align: middle;
+    padding-right: 18px;
+}
+
+.menu-2-rect {
+    position: absolute;
+    top: 208px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.menu-2-icons {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 230px;
+}
+
+.menu-2-icons td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-icon-element {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.menu-icon-element a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-3-background {
+    position: absolute;
+    left: 0;
+    top: 316px;
+}
+
+.menu-3-background-captions {
+    position: absolute;
+    top: 333px;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.menu-3-background-captions td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+.main-scroll {
+    position: absolute;
+    top: 387px;
+    left: 0;
+    width: 100%;
+    height: 222px;
+    overflow: scroll;
+}
+
+/* custom scrollbar styles */
+.custom-scroll-tiny_container {
+    overflow: hidden !important;
+    /*position: relative;*/
+}
+
+.custom-scroll-tiny_inner {
+    overflow: scroll;
+    height: 100%;
+    *position: absolute; /* ie7 fix */
+    *left: 0;
+    *right: 0;
+}
+
+.custom-scroll-tiny_inner::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.custom-scroll-tiny_inner {
+    -ms-overflow-style: none;
+}
+
+.custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_bar-x {
+    cursor: default;
+    position: absolute;
+    border-radius: 1px;
+    z-index: 1;
+    background: #888;
+    opacity: .4;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    transition: opacity .2s;
+}
+
+.custom-scroll-tiny_bar-y {
+    top: 0;
+    right: 1px;
+    width: 8px;
+}
+
+.custom-scroll-tiny_bar-x {
+    left: 0;
+    bottom: 1px;
+    height: 8px;
+}
+
+.custom-scroll-tiny_bar-y:hover,
+.custom-scroll-tiny_bar-x:hover {
+    opacity: .7;
+}
+
+.custom-scroll-tiny_bar:active,
+.custom-scroll-tiny_bar-x:active {
+    opacity: 1;
+}
+
+.custom-scroll-tiny_hidden-y > .custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_hidden-x > .custom-scroll-tiny_bar-x {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility step-end .3s;
+}
+
+/* changes */
+.custom-scroll-tiny_bar-y {
+    right: -4px;
+    width: 4px;
+    transition: right .2s, background .2s;
+}
+
+.custom-scroll-tiny_bar-x {
+    bottom: -4px;
+    height: 4px;
+    transition: bottom .2s, background .2s;
+}
+
+.custom-scroll-tiny_bar-y:active,
+.custom-scroll-tiny_inner:focus .custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_container:hover .custom-scroll-tiny_bar-y {
+    right: 1px;
+}
+
+.custom-scroll-tiny_bar-x:active,
+.custom-scroll-tiny_inner:focus .custom-scroll-tiny_bar-x,
+.custom-scroll-tiny_container:hover .custom-scroll-tiny_bar-x {
+    bottom: 1px;
+}
+
+/* // custom scrollbar styles */
+
+.history-pane-main {
+    width: 335px;
+    height: 72px;
+    overflow: visible;
+    background: url('/img/mob/history_pane_rect.png') no-repeat;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.history-pane-main-icon {
+    position: absolute;
+    left: 21px;
+    top: 20px;
+}
+
+.history-pane-main-name {
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    left: 63px;
+    top: 23px;
+    font-size: 12px;
+}
+
+.history-pane-main-datetime {
+    position: absolute;
+    color: #9eaacc;
+    left: 63px;
+    top: 42px;
+    font-size: 12px;
+}
+
+.history-pane-main-amount-USD {
+    position: absolute;
+    color: #fff;
+    right: 36px;
+    top: 23px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.history-pane-main-arrow {
+    position: absolute;
+    right: 20px;
+    top: 27px;
+}
+
+.history-pane-main-amount-BTC {
+    position: absolute;
+    color: #9eaacc;
+    right: 36px;
+    top: 42px;
+    font-size: 12px;
+}
+
+.main-bottom-hover {
+    position: absolute;
+    width: 100%;
+    height: 166px;
+    bottom: 0;
+    background-image: url(/img/mob/hover.png);
+    pointer-events: none;
+}
+
+.bitcoins-amount-main {
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bitcoins-amount-main-arrow {
+    margin-left: 5px;
+}
+
+.top-scroll-left-arrow,
+.top-scroll-right-arrow {
+    position: absolute;
+    top: 147px;
+}
+
+.top-scroll-left-arrow {
+    left: 40px;
+}
+
+.top-scroll-right-arrow {
+    right: 40px;
+}
+
+.tap-to-pay-nfc-img {
+    display: block;
+    top: 260px;
+}
+
+.m3bc-underline {
+    display: none;
+    background: url(/img/mob/m3bc-underline.png) no-repeat;
+    width: 18px;
+    height: 2px;
+}
+
+.m3bc-selected .m3bc-underline {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.m3bc-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.tap-to-pay-nfc-success-background {
+    position: absolute;
+    top: 142px;
+}
+
+.main-USD-caption {
+    position: absolute;
+    top: 132px;
+}
+
+.main-dollar-sign {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main-dollar-amount {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.main-dollar-amount-cents {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.nfc-success-icon {
+    top: 190px;
+}
+
+.nfc-success-capt {
+    color: #d1d8f5;
+    top: 256px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nfc-success-capt-2 {
+    top: 305px;
+    font-size: 11px;
+    color: #9eaacc;
+    font-weight: 500;
+}
+
+.nfc-success-amount-USD {
+    top: 337px;
+    color: #dee2ee;
+    font-size: 24px;
+}
+
+.nfc-success-amount-BTC {
+    top: 372px;
+    color: #9eaacc;
+    font-size: 11px;
+}
+
+.nfc-success-buttons {
+    width: 170px;
+    top: 413px;
+}
+
+.nfc-success-buttons td {
+    width: 50%;
+    /*text-align: center;
+    vertical-align: top;
+    color: #9eaacc;
+    font-weight: 500;
+    letter-spacing: 1px;*/
+}
+
+/*.nfc-success-buttons img {
+    -webkit-filter: drop-shadow(0 20px 24px rgba(0,0,0,0.6));
+    filter: drop-shadow(0 20px 24px rgba(0,0,0,0.6));
+    margin-bottom: 6px;
+}*/
+
+.round-btn td {
+    text-align: center;
+    vertical-align: top;
+    color: #9eaacc;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.round-btn img {
+    -webkit-filter: drop-shadow(0 20px 24px rgba(0,0,0,0.6));
+    filter: drop-shadow(0 20px 24px rgba(0,0,0,0.6));
+    margin-bottom: 6px;
+}
+
+.nfc-success-finish {
+    top: 511px;
+}
+
+.transfer-top-caption {
+    top: 108px;
+    color: #9eaacc;
+    font-size: 12px;
+}
+
+.transfer-amount-usd {
+    top: 151px;
+    color: #dee2ee;
+    font-size: 24px;
+}
+
+.transfer-amount-btc {
+    top: 184px;
+    color: #9eaacc;
+    font-size: 11px;
+}
+
+.transfer-bank-card {
+    top: 213px;
+}
+
+.tbc-user-name {
+    position: absolute;
+    top: 53px;
+    left: 115px;
+    font-size: 13px;
+}
+
+.tbc-number {
+    position: absolute;
+    top: 112px;
+    left: 53px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 256px;
+}
+
+.tbcn-num {
+    width: 5px;
+}
+
+.tbcn-num {
+    width: 33.3%;
+}
+
+.tbc-card-num-capt {
+    position: absolute;
+    top: 125px;
+    left: 53px;
+    font-size: 11px;
+    color: #dee2ee;
+}
+
+.transfer-buttons {
+    width: 242px;
+    top: 432px;
+}
+
+.transfer-buttons td {
+    width: 33.3%;
+}
